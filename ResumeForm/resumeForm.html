@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resume.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/97aa3d1d1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="../icons8-resume-96 (1).png"
+      type="image/x-icon"
+    />
+    <title>Resume Form</title>
+  </head>
+  <body id="bod">
+    <div id="container">
+      <div class="colorBox">
+        <h1 id="profileName"></h1>
+      </div>
+      <div class="left">
+        <div class="personal-inform-container">
+          <div class="img-box">
+            <img id="profile-img" />
+          </div>
+          <div class="contactGroup">
+            <h3>Contact</h3>
+            <div class="phone-address-email">
+              <span class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <p class="phoneText"></p>
+              </span>
+              <span class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="emailText"></p>
+              </span>
+              <span class="address">
+                <i class="fa-solid fa-house"></i>
+                <p class="addressText"></p>
+              </span>
+            </div>
+          </div>
+          <div class="social-link">
+            <h3>Social Account</h3>
+            <div class="linke-git-twitter">
+              <span class="linke">
+                <i class="fa-brands fa-linkedin"></i>
+                <a class="linkedin-link" target="_blank">Linkedin</a>
+              </span>
+              <span class="git">
+                <i class="fa-brands fa-github"></i>
+                <a class="git-link" target="_blank">Git-hub</a>
+              </span>
+              <span class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+                <a class="twitter-link" target="_blank">Twitter</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="professional-inform-container">
+          <!-- for objective text -->
+          <div class="objective">
+            <div class="top">
+              <span>Objective</span>
+            </div>
+            <div class="bottom">
+              <p id="objectiveText"></p>
+            </div>
+          </div>
+
+          <!-- for work exp text -->
+          <div class="work-exp">
+            <div class="top">
+              <span>Work Experience</span>
+            </div>
+            <div class="bottom">
+              <p id="workExpText"></p>
+            </div>
+          </div>
+
+          <!-- for work exp text -->
+          <div class="academic">
+            <div class="top">
+              <span>Academic Qualification</span>
+            </div>
+            <div class="bottom">
+              <p id="qualifyText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="butt">Print</button>
+    <script src="./resume.js"></script>
+  </body>
+</html>

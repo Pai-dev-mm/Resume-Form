@@ -1,0 +1,23 @@
+$navyColor: #0c356a;
+$blue: #0174be;
+$yellow: #ffc436;
+$wedding: #fff0ce;
+
+$smallWidth: 370px;
+$mobileWidth: 560px;
+
+@mixin mobile {
+  @media (max-width : #{$mobileWidth}) {
+    @content;
+  }
+}
+@mixin smallMobile {
+  @media (max-width : #{$smallWidth}) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: "nice";
+  src: "Roboto Mono", monospace;
+}

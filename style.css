@@ -1,0 +1,310 @@
+@font-face {
+  font-family: "nice";
+  src: "Roboto Mono", monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+}
+@media (max-width: 560px) {
+  .container {
+    height: auto;
+    position: relative;
+  }
+}
+.container header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffc436;
+}
+.container header h1 {
+  font-family: "Merriweather", serif;
+  color: #0c356a;
+}
+.container main {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 560px) {
+  .container main {
+    flex-direction: column;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+}
+.container main .left {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 560px) {
+  .container main .left {
+    width: 100%;
+  }
+}
+.container main .left .personal-inform-container {
+  width: 90%;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+  color: #0c356a;
+}
+.container main .left .personal-inform-container h2 {
+  text-align: center;
+}
+.container main .left .personal-inform-container div {
+  width: 100%;
+  height: 100px;
+}
+.container main .left .personal-inform-container .address {
+  height: 200px;
+}
+.container main .left .personal-inform-container div > span {
+  font-weight: 500;
+}
+.container main .left .personal-inform-container div > input {
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  margin-top: 10px;
+  color: white;
+  outline-color: #ffc436;
+  background-color: #0c356a;
+  font-family: "Roboto Mono", monospace;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.container main .left .personal-inform-container div > input:focus {
+  background-color: white;
+  color: black;
+}
+.container main .left .personal-inform-container div > input:focus::-moz-placeholder {
+  color: grey;
+}
+.container main .left .personal-inform-container div > input:focus::placeholder {
+  color: grey;
+}
+.container main .left .personal-inform-container div > input::-webkit-input-placeholder {
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: -0.5px;
+  color: white;
+}
+.container main .left .personal-inform-container textarea {
+  width: 90%;
+  height: 80px;
+  outline-color: #ffc436;
+  padding: 8px;
+  border: none;
+  color: white;
+  background-color: #0c356a;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  margin-top: 10px;
+}
+.container main .left .personal-inform-container textarea:focus {
+  background-color: white;
+  outline-color: #ffc436;
+  color: black;
+}
+.container main .left .personal-inform-container textarea:focus::-moz-placeholder {
+  color: grey;
+}
+.container main .left .personal-inform-container textarea:focus::placeholder {
+  color: grey;
+}
+.container main .left .personal-inform-container textarea::-webkit-input-placeholder {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+}
+.container main .left .personal-inform-container .select-photo .fileInputContainer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 90%;
+}
+.container main .left .personal-inform-container .select-photo .fileInputContainer #file {
+  background-color: white;
+  padding-top: 15px;
+  color: black;
+  opacity: 0;
+  width: 200px;
+}
+.container main .left .personal-inform-container .select-photo .fileInputContainer .labelForFile {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 700px;
+}
+.container main .left .personal-inform-container .select-photo .fileInputContainer .labelForFile .fa-upload {
+  font-size: 20px;
+}
+.container main .left .personal-inform-container .buttonContainer {
+  width: 90vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+@media (max-width: 560px) {
+  .container main .left .personal-inform-container .buttonContainer {
+    bottom: -100px;
+  }
+}
+.container main .left .personal-inform-container .buttonContainer button {
+  width: 120px;
+  height: 50px;
+  background-color: #0c356a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.container main .left .personal-inform-container .buttonContainer button:active {
+  background-color: #0174be;
+}
+.container main .right {
+  width: 50%;
+  height: 90%;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+@media (max-width: 560px) {
+  .container main .right {
+    width: 100%;
+  }
+}
+.container main .right .professional-inform-container {
+  width: 90%;
+  height: 100%;
+}
+.container main .right .professional-inform-container h2 {
+  text-align: center;
+  color: #0c356a;
+}
+.container main .right .professional-inform-container div {
+  width: 100%;
+  height: 200px;
+}
+.container main .right .professional-inform-container div span {
+  color: #0c356a;
+}
+.container main .right .professional-inform-container div > textarea {
+  width: 90%;
+  height: 100px;
+  outline-color: #0174be;
+  padding: 8px;
+  border: none;
+  color: white;
+  background-color: #0c356a;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  margin-top: 20px;
+}
+.container main .right .professional-inform-container div > textarea:focus {
+  background-color: white;
+  outline-color: #ffc436;
+  color: black;
+}
+.container main .right .professional-inform-container div > textarea:focus::-moz-placeholder {
+  color: grey;
+}
+.container main .right .professional-inform-container div > textarea:focus::placeholder {
+  color: grey;
+}
+.container main .right .professional-inform-container div > textarea::-webkit-input-placeholder {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+}
+.container main .right .professional-inform-container .skill {
+  display: flex;
+  flex-direction: column;
+}
+.container main .right .professional-inform-container .skill #skillInput {
+  width: 50%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  margin-top: 10px;
+  color: white;
+  outline-color: #ffc436;
+  background-color: #0c356a;
+  font-family: "Roboto Mono", monospace;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.container main .right .professional-inform-container .skill #skillInput:focus {
+  background-color: white;
+  color: black;
+}
+.container main .right .professional-inform-container .skill #skillInput:focus::-moz-placeholder {
+  color: grey;
+}
+.container main .right .professional-inform-container .skill #skillInput:focus::placeholder {
+  color: grey;
+}
+.container main .right .professional-inform-container .skill #skillInput::-webkit-input-placeholder {
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: -0.5px;
+  color: white;
+}
+.container main .right .professional-inform-container .skill .add {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  background: #ffc436;
+  color: #0c356a;
+  font-size: 14px;
+  font-weight: 700;
+}
+.container main .right .professional-inform-container .showSkill {
+  margin-top: 10px;
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+.container main .right .professional-inform-container .showSkill .skillBox {
+  width: auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.container main .right .professional-inform-container .showSkill .skillBox .crossSign {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  font-weight: 900;
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.container main .right .professional-inform-container .showSkill .skillBox .crossSign:hover {
+  border-color: red;
+  color: red;
+}
+.container main .right .professional-inform-container .showSkill span {
+  padding: 10px 20px;
+  background-color: #ffc436;
+  color: #0c356a;
+  border-radius: 16px;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

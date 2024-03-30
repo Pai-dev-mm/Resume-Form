@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;600&family=Barlow+Semi+Condensed:wght@100;200;300;400;500&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,600;1,700&family=Castoro+Titling&family=Cormorant:wght@300;500&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=Dosis:wght@200;400;500;700&family=EB+Garamond:wght@400;500&family=Fraunces:wght@100;200;300;400;500;600;700;800;900&family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;1,400&family=Inconsolata:wght@300;400&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Khand:wght@400;500;600;700&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Marcellus&family=Merriweather:ital,wght@0,400;1,300&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,300&family=Prata&family=Public+Sans:ital,wght@0,400;1,300;1,400&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700&family=Tiro+Bangla&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="icons8-cv-arcade-96.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/97aa3d1d1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Resume Builder</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Let's Make Resume</h1>
+      </header>
+      <main>
+        <div class="left">
+          <form class="personal-inform-container">
+            <h2>Personal Information</h2>
+
+            <!-- for name input -->
+            <div class="name">
+              <span>Name</span><br />
+              <input
+                spellcheck="false"
+                type="text"
+                placeholder="Enter your name"
+                id="nameInput"
+              />
+            </div>
+
+            <!-- for contact number input -->
+            <div class="contact-number">
+              <span>Contact Number</span><br />
+              <input
+                spellcheck="false"
+                type="text"
+                placeholder="Enter your phone number"
+                id="numberInput"
+              />
+            </div>
+            <!--  -->
+            <!-- for address -->
+            <div class="address">
+              <span>Address</span><br />
+              <textarea
+                spellcheck="false"
+                placeholder="Enter your address"
+                id="addressInput"
+              ></textarea>
+            </div>
+
+            <!-- for select photo -->
+            <div class="select-photo">
+              <span>Select photo</span><br />
+              <div class="fileInputContainer">
+                <input
+                  spellcheck="false"
+                  name="file"
+                  type="file"
+                  id="file"
+                  placeholder="file"
+                />
+                <label for="file" class="labelForFile">
+                  <i class="fa-solid fa-upload"></i> Choose a file</label
+                >
+              </div>
+            </div>
+
+            <!-- for social media  -->
+            <p>Social Media Contact Link</p>
+            <div class="linkedin">
+              <span>Linkedin</span><br />
+              <input
+                spellcheck="false"
+                type="text"
+                placeholder="Enter your account"
+                id="linkedinInput"
+              />
+            </div>
+            <div class="git">
+              <span>Git Hub</span><br />
+              <input
+                spellcheck="false"
+                type="text"
+                placeholder="Enter your account"
+                id="gitInput"
+              />
+            </div>
+            <div class="twitter">
+              <span>Twitter or X</span><br />
+              <input
+                spellcheck="false"
+                type="text"
+                placeholder="Enter your account"
+                id="twitterInput"
+              />
+            </div>
+            <div class="gmail">
+              <span>Gmail</span><br />
+              <input
+                spellcheck="false"
+                type="text"
+                placeholder="Enter your account"
+                id="gmailInput"
+              />
+            </div>
+
+            <div class="buttonContainer">
+              <button class="generate">Generate CV</button>
+            </div>
+          </form>
+        </div>
+        <div class="right">
+          <form class="professional-inform-container">
+            <h2>Professional Information</h2>
+            <div class="objective">
+              <span>Objective</span><br />
+              <textarea
+                spellcheck="false"
+                placeholder="Enter Here"
+                id="objectiveInput"
+              ></textarea>
+            </div>
+            <div class="work-exp">
+              <span>Work Experience</span><br />
+              <textarea
+                spellcheck="false"
+                placeholder="Enter Here"
+                id="expInput"
+              ></textarea>
+            </div>
+            <div class="acadamic-q">
+              <span>Acadamic Qualification</span><br />
+              <textarea
+                spellcheck="false"
+                placeholder="Enter Here"
+                id="acadamicInput"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <br />
+      </main>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
+
+<!-- add comment from abu computer -->
+
+<!-- this scripts is saved PDF -->
+<!-- <script>
+  const first = document.querySelector('.first')
+
+<div class="skill">
+              <span>Add your skill</span>
+              skill add input
+              <div>
+                <input type="text" id="skillInput" placeholder="Add Skill" />
+                <button class="add">Add</button>
+              </div>
+
+              this is show add skill text
+              <div class="showSkill"></div>
+            </div>
+
+  let count;
+  let count1;
+  
+  function plusWidth(){
+      console.log(first.clientHeight);
+      count = first.clientWidth + 80 
+      count1 = first.clientHeight + 20 
+      first.style.width = count + "px"
+      first.style.height = count1 + "px"
+  }
+
+  function minusWidth(){
+      count = first.clientWidth - 80 
+      first.style.width = count + "px"
+      count1 = first.clientHeight - 20 
+      first.style.height = count1 + "px"
+  }
+  function saveAsPDF(){
+      var element = document.getElementById('element-to-print');
+      var opt = {
+      margin:       1,
+      filename:     'one-point-five.pdf',
+      image:        { type: 'jpeg', quality: 0.97 },
+      html2canvas:  { scale: 1.5 },
+      jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+      };
+
+      html2pdf().set(opt).from(element).save()
+  }
+</script> -->
